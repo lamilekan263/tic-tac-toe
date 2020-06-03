@@ -16,7 +16,7 @@ resetBtn.addEventListener('click', function () {
 })
 
 let counter = 1;
-
+let playerOnecount = 0;
 
 
 but.forEach(n =>{
@@ -24,6 +24,7 @@ but.forEach(n =>{
         if(counter % 2 !== 0){
             n.innerHTML = 'X'
             counter++
+            playerOnecount++
             PlayerOnecheck()
             
             
@@ -70,7 +71,7 @@ function PlayerOnecheck(){
         reload()
         return
     }else{
-        return
+        checkForDraw()
     }
 }
 
@@ -119,6 +120,22 @@ function PlayerTwocheck(){
 function reload(){
     window.location.reload()
 }
+
+
+
+// function that checks for draw
+function checkForDraw(){
+    if(playerOnecount >= 5){
+        alert(`The Game Ends in Draw
+                THANK YOU FOR PLAYING
+                CLICK OK TO START AGAIN
+                `)
+        reload();
+    }else{
+        return
+    }
+}
+
 reset = () =>{
     but.forEach(n => n.innerHTML = '')
 }
