@@ -1,0 +1,43 @@
+.game-box{
+    max-width:500px;
+    border:1px solid black;
+    height:500px;
+    margin: 0 auto;
+    border-radius:21px;
+     
+}
+.cat{
+    display:flex;
+    flex-wrap:wrap;
+    
+    height:33%;
+    
+    
+}
+button{
+    border:none;
+}
+.cat:nth-child(1){
+    border-bottom: 1px solid black;
+    
+}
+.cat:nth-child(2){
+    border-bottom: 1px solid black;
+}
+
+.btn-click{
+    
+    
+    padding-top:60px;
+    width:33%;
+    text-align:center;
+    font-size:30px;
+    margin:0 auto;
+}
+.btn-click:nth-child(1){
+    border-right:1px solid black;
+}
+.btn-click:nth-child(2){
+    border-right:1px solid black;
+}
+
