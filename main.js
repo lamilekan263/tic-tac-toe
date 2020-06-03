@@ -26,6 +26,7 @@ but.forEach(n =>{
             counter++
             PlayerOnecheck()
             
+            
         }else if(counter % 2 === 0){
             n.innerHTML = 'O'
             counter++
@@ -38,24 +39,36 @@ but.forEach(n =>{
 function PlayerOnecheck(){
     if(btnOne.innerHTML==='X' && btnTwo.innerHTML === 'X' && btnTree.innerHTML === 'X' ){
         alert('player One wins')
-        reset()
+        reload()
         return true
     }else if(btnFour.innerHTML==='X' && btnFive.innerHTML === 'X' && btnSix.innerHTML === 'X'){
         alert('player One wins')
-        reset()
+        reload()
         return
     }else if(btnSeven.innerHTML==='X' && btnEight.innerHTML === 'X' && btnNine.innerHTML === 'X'){
         alert('player One wins')
+        reload()
+        return
     }else if(btnOne.innerHTML==='X' && btnFour.innerHTML === 'X' && btnSeven.innerHTML === 'X'){
         alert('player One wins')
+        reload()
+        return
     }else if(btnTwo.innerHTML==='X' && btnFive.innerHTML === 'X' && btnEight.innerHTML === 'X'){
         alert('player One wins')
+        reload()
+        return
     }else if(btnTree.innerHTML==='X' && btnSix.innerHTML === 'X' && btnNine.innerHTML === 'X'){
         alert('player One wins')
+        reload()
+        return
     }else if(btnOne.innerHTML==='X' && btnFive.innerHTML === 'X' && btnNine.innerHTML === 'X'){
         alert('player One wins')
+        reload()
+        return
     }else if(btnTree.innerHTML==='X' && btnFive.innerHTML === 'X' && btnSeven.innerHTML === 'X'){
         alert('player One wins')
+        reload()
+        return
     }else{
         return
     }
@@ -66,25 +79,46 @@ function PlayerOnecheck(){
 
 function PlayerTwocheck(){
     if(btnOne.innerHTML==='O' && btnTwo.innerHTML === 'O' && btnTree.innerHTML === 'O' ){
-        console.log('player Two wins')
+        alert('Player Two wins')
+        reload()
+        return true
     }else if(btnFour.innerHTML==='O' && btnFive.innerHTML === 'O' && btnSix.innerHTML === 'O'){
-        console.log('player Two wins')
+        alert('Player Two wins')
+        reload()
+        return
     }else if(btnSeven.innerHTML==='O' && btnEight.innerHTML === 'O' && btnNine.innerHTML === 'O'){
-        console.log('player Two wins')
+        alert('Player Two wins')
+        reload()
+        return
     }else if(btnOne.innerHTML==='O' && btnFour.innerHTML === 'O' && btnSeven.innerHTML === 'O'){
-        console.log('player Two wins')
+        alert('Player Two wins')
+        reload()
+        return
     }else if(btnTwo.innerHTML==='O' && btnFive.innerHTML === 'O' && btnEight.innerHTML === 'O'){
-        console.log('player Two wins')
+        alert('Player Two wins')
+        reload()
+        return
     }else if(btnTree.innerHTML==='O' && btnSix.innerHTML === 'O' && btnNine.innerHTML === 'O'){
-        console.log('player Two wins')
+        alert('Player Two wins')
+        reload()
+        return
     }else if(btnOne.innerHTML==='O' && btnFive.innerHTML === 'O' && btnNine.innerHTML === 'O'){
-        console.log('player Two wins')
+        alert('Player Two wins')
+        reload()
+        return
     }else if(btnTree.innerHTML==='O' && btnFive.innerHTML === 'O' && btnSeven.innerHTML === 'O'){
-        console.log('player Two wins')
+        alert('Player Two wins')
+        reload()
+        return
+    }else{
+        return
     }
 }
 
-
+// function to reload the game
+function reload(){
+    window.location.reload()
+}
 reset = () =>{
     but.forEach(n => n.innerHTML = '')
 }
