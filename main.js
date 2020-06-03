@@ -136,6 +136,3 @@ function checkForDraw(){
     }
 }
 
-reset = () =>{
-    but.forEach(n => n.innerHTML = '')
-}
